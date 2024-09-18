@@ -1,2 +1,2 @@
 # Churn
-Model results for churn prediction
+Results for churn prediction using different models
