@@ -1,17 +1,17 @@
 # Telco Customer Churn Analysis
-Overview
+#Overview
 This repository provides an end-to-end machine learning workflow to predict customer churn in a telecommunications company using Databricks. The notebook includes data ingestion, preprocessing, feature engineering, model training, evaluation, and visualization of results. It demonstrates a comparison of multiple classification models including Logistic Regression, Random Forest, Support Vector Machines, k-Nearest Neighbors, and Gradient Boosting.
 
-Files and Structure
+#Files and Structure
 notebook.ipynb: The main Databricks notebook where all the analysis and modeling are performed.
 README.md: A file explaining the purpose and structure of the repository.
 data/: Directory (not included here) to hold the WA_Fn-UseC_-Telco-Customer-Churn.csv dataset. Make sure the dataset is uploaded to your Azure Blob Storage or other accessible storage.
 Key Sections in the Notebook
 Importing Libraries: The notebook starts by importing essential Python libraries such as pandas, numpy, matplotlib, and sklearn for data processing and model building.
 
-Data Ingestion: Data is ingested from Azure Blob Storage using a mount point configured with credentials. If you encounter issues with the mount point, ensure you have the correct storage account key and container access.
+#Data Ingestion: Data is ingested from Azure Blob Storage using a mount point configured with credentials. If you encounter issues with the mount point, ensure you have the correct storage account key and container access.
 
-Data Preprocessing:
+#Data Preprocessing:
 
 The CSV file is read into a Spark DataFrame, and necessary columns are selected.
 The Spark DataFrame is then converted into a Pandas DataFrame for further processing.
