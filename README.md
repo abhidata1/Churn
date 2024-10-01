@@ -73,3 +73,5 @@ The models provide varying levels of accuracy and insights into customer churn. 
 ## Future Enhancements
 
 Since this was done in Databricks, a Spark DataFrame should be utilized instead of a Pandas DataFrame to take full advantage of distributed computing across nodes. However, given that this is a small dataset, using a Pandas DataFrame is acceptable. If the dataset were larger, leveraging a Spark DataFrame would be more appropriate.
+
+It’s also important to consider that if the dataset is continuously updated upstream, it would be more efficient to read it directly from a table in the Hive metastore, rather than using `dbfs.utils` to virtually mount the CSV from blob storage. However, since the dataset is not expected to change frequently, using `dbfs.utils` is a suitable approach in this case.
