@@ -1,11 +1,11 @@
-# Telco Customer Churn Analysis
+# Customer Churn Analysis
 ## Overview:
 This repository provides an end-to-end machine learning workflow to predict customer churn in a telecommunications company using Databricks. The notebook includes data ingestion, preprocessing, feature engineering, model training, evaluation, and visualization of results. It demonstrates a comparison of multiple classification models including Logistic Regression, Random Forest, Support Vector Machines, k-Nearest Neighbors, and Gradient Boosting.
 
 ## Files and Structure:
 notebook.ipynb: The main Databricks notebook where all the analysis and modeling are performed.
 README.md: A file explaining the purpose and structure of the repository.
-data/: Directory (not included here) to hold the WA_Fn-UseC_-Telco-Customer-Churn.csv dataset. Make sure the dataset is uploaded to your Azure Blob Storage or other accessible storage.
+WA_Fn-UseC_-Telco-Customer-Churn.csv: The dataset used to train and test the churn model, held in Azure Blob Storage
 
 ## Key Sections in the Notebook
 
@@ -15,7 +15,7 @@ The notebook starts by importing essential Python libraries such as pandas, nump
 
 **Data Ingestion:** 
 
-Data is ingested from Azure Blob Storage using a mount point configured with credentials. If you encounter issues with the mount point, ensure you have the correct storage account key and container access.
+Data is ingested from Azure Blob Storage using a mount point configured with credentials. 
 
 **Data Preprocessing:**
 
@@ -27,15 +27,28 @@ Handling of missing values and encoding of categorical variables using LabelEnco
 
 Selection of features relevant to churn prediction.
 Feature scaling using StandardScaler to normalize the data for better model performance.
-Modeling:
 
-**Logistic Regression:** 
+**Modeling:**
+
+***Logistic Regression:*** 
 
 Baseline model to predict customer churn.
-Random Forest: Ensemble method to capture non-linear relationships.
-Support Vector Machine (SVM): Linear SVM for classification.
-k-Nearest Neighbors (k-NN): Non-parametric method for classification.
-Gradient Boosting: Another ensemble method focusing on minimizing error using decision trees.
+
+***Random Forest:***
+
+Ensemble method to capture non-linear relationships.
+
+***Support Vector Machine (SVM):***
+
+Linear SVM for classification.
+
+***k-Nearest Neighbors (k-NN):***
+
+Non-parametric method for classification.
+
+***Gradient Boosting:***
+
+Another ensemble method focusing on minimizing error using decision trees.
 
 **Model Evaluation:**
 
