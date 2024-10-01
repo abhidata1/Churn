@@ -1,13 +1,13 @@
 # Telco Customer Churn Analysis
-##Overview:
+## Overview:
 This repository provides an end-to-end machine learning workflow to predict customer churn in a telecommunications company using Databricks. The notebook includes data ingestion, preprocessing, feature engineering, model training, evaluation, and visualization of results. It demonstrates a comparison of multiple classification models including Logistic Regression, Random Forest, Support Vector Machines, k-Nearest Neighbors, and Gradient Boosting.
 
-##Files and Structure:
+## Files and Structure:
 notebook.ipynb: The main Databricks notebook where all the analysis and modeling are performed.
 README.md: A file explaining the purpose and structure of the repository.
 data/: Directory (not included here) to hold the WA_Fn-UseC_-Telco-Customer-Churn.csv dataset. Make sure the dataset is uploaded to your Azure Blob Storage or other accessible storage.
 
-##Key Sections in the Notebook
+## Key Sections in the Notebook
 
 **Importing Libraries:** 
 
@@ -47,7 +47,7 @@ Feature importance plot for Random Forest to understand the contribution of each
 Plot of feature importance based on Random Forest to highlight the most influential features.
 
 
-##Getting Started##
+## Getting Started
 
 **Prerequisites:**
 
@@ -66,7 +66,7 @@ Run the notebook cells sequentially to execute the entire workflow.
 Modify the feature set and hyperparameters as needed based on your experimentation.
 
 
-##Results##
+## Results
 
 The models provide varying levels of accuracy and insights into customer churn. The Random Forest and Gradient Boosting models typically show better performance for this dataset, as indicated by their higher accuracy scores and detailed feature importance visualization.
 
