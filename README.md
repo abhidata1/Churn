@@ -60,25 +60,6 @@ Feature importance plot for Random Forest to understand the contribution of each
 Plot of feature importance based on Random Forest to highlight the most influential features.
 
 
-## Getting Started
-
-**Prerequisites:**
-
-Databricks Workspace with access to Azure Blob Storage.
-Required Python libraries installed (pandas, numpy, matplotlib, seaborn, sklearn).
-
-**Setting Up the Environment:**
-
-Make sure to configure the storage account and container with appropriate access keys in the Ingest Data section.
-Upload the WA_Fn-UseC_-Telco-Customer-Churn.csv dataset to your storage container and mount it to /mnt/churn in the Databricks environment.
-
-
-**Running the Notebook:**
-
-Run the notebook cells sequentially to execute the entire workflow.
-Modify the feature set and hyperparameters as needed based on your experimentation.
-
-
 ## Results
 
 The models provide varying levels of accuracy and insights into customer churn. The Random Forest and Gradient Boosting models typically show better performance for this dataset, as indicated by their higher accuracy scores and detailed feature importance visualization.
