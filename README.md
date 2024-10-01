@@ -70,6 +70,6 @@ Modify the feature set and hyperparameters as needed based on your experimentati
 
 The models provide varying levels of accuracy and insights into customer churn. The Random Forest and Gradient Boosting models typically show better performance for this dataset, as indicated by their higher accuracy scores and detailed feature importance visualization.
 
-##Future Enhancements##
+## Future Enhancements
 
 Since this was done in Databricks, a Spark DataFrame should be utilized instead of a Pandas DataFrame to take full advantage of distributed computing across nodes. However, given that this is a small dataset, using a Pandas DataFrame is acceptable. If the dataset were larger, leveraging a Spark DataFrame would be more appropriate.
